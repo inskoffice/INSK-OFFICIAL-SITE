@@ -2,7 +2,7 @@
 /* Section Wrapper */
 /* ===================== */
 .stats-premium {
-  padding: 120px 0;
+  padding: 30px 0;
   /* background: linear-gradient(
     135deg,
     #f9c66d 0%,
@@ -11,7 +11,7 @@
     #ff3d81 100%
   ); */
   border-radius: 40px;
-  margin: 80px 20px;
+  margin: 40px 20px;
 }
 
 /* ===================== */
@@ -78,13 +78,54 @@
   gap: 28px;
 }
 
+/* ===================== */
+/* Flipping Card Wrapper */
+/* ===================== */
+.stats-card-wrapper {
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.stats-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 220px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.stats-card-wrapper.flipped .stats-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* ===================== */
+/* Stats Cards (Front & Back) */
+/* ===================== */
 .stats-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(10px);
   border-radius: 22px;
   padding: 36px;
   text-align: center;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+ /* Front side - default position */
+.stats-card-front {
+ 
+}
+
+.stats-card-back {
+  transform: rotateY(180deg);
+  background: rgba(255, 255, 255, 0.35);
 }
 
 .stats-card h3 {
@@ -92,11 +133,14 @@
   font-weight: 800;
   color: #000;
   margin-bottom: 10px;
+  margin-top: 15px;
 }
 
-.stats-card p {
-  font-size: 14px;
+.stats-card-text {
+  font-size: 16px;
   font-weight: 600;
+  color: #1b1b1b;
+  line-height: 1.4;
 }
 
 /* Center logo */
@@ -111,7 +155,7 @@
   border-radius: 50%;
   display: grid;
   place-items: center;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
 }
 
 .stats-center-logo img {
@@ -180,4 +224,24 @@
   .stats-card {
     padding: 28px;
   }
+
+  .stats-card-inner {
+    min-height: 200px;
+  }
+}
+
+.stats-card-back {
+  background: var(--brand-gradient);
+  border-color: var(--brand);
+
+
+}
+
+.stats-card-back .stats-card-text {
+  color: #fff;
+}
+
+.stats-card-front {
+  border-color: var(--brand);
+  border: 1px solid var(--brand);
 }
