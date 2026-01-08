@@ -308,6 +308,10 @@ p {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
+.btn1 i {
+  margin-right: 8px;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   h1 {

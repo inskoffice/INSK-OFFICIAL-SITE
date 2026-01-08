@@ -27,14 +27,14 @@ export default function Navbar() {
           <a href="/" onClick={() => setOpen(false)}>Home</a>
           <a href="#services" onClick={() => setOpen(false)}>Services</a>
           <a href="#about" onClick={() => setOpen(false)}>About Us</a>
-          {/* <a href="#client" onClick={() => setOpen(false)}>Client</a> */}
-          <a href="/careers" onClick={() => setOpen(false)}>Careers</a>
+          <a href="#client" onClick={() => setOpen(false)}>Client</a>
           <a href="#contact" onClick={() => setOpen(false)}>Contact</a>
+          <a href="/careers" onClick={() => setOpen(false)}>Careers</a>
 
           {/* MOBILE CTA */}
           <div className="mobile-cta">
             <a className="btn1" href="https://wa.me/94760685652">
-              <i className="ri-whatsapp-line"></i> Let's Talk
+              <i className="ri-whatsapp-line" style={{ color: '#25D366' }}></i> Let's Talk
             </a>
             <a className="btn" href="#services">
               All Our Services
@@ -45,7 +45,7 @@ export default function Navbar() {
         {/* DESKTOP CTA */}
         <div className="nav-cta">
           <a className="btn1" href="https://wa.me/94760685652">
-            <i className="ri-whatsapp-line"></i> Let's Talk
+            <i className="ri-whatsapp-line" style={{ color: '#25D366' }}></i> Let's Talk
           </a>
           <a className="btn" href="#services">
             All Our Services
