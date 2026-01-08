@@ -19,7 +19,7 @@ const processSteps = [
   {
     id: 3,
     step: "Step 03",
-    title: "Content Creation",
+    title: "Content Planing & Creation",
     description: "Lorem ipsum dolor sit amet, consectetuer adipiscing",
     icon: "💡" // Replace with your actual icon
   },

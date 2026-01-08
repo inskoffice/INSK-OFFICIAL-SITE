@@ -50,7 +50,7 @@ export default function Testimonials() {
           </div>
           
           <h2 className="testimonials__title">
-            What Our Happy clients say about us.
+            What <span class="gradient-text">Our Happy Clients</span>  Say About Us.
           </h2>
           
           <div className="testimonials__image-wrapper">

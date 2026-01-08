@@ -1,10 +1,10 @@
 .testimonials {
   padding: 100px 20px;
-  background: #ffffff;
+  background: var(--card);
 }
 
 .testimonials__container {
-  max-width: 1400px;
+  max-width: var(--container);
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -22,7 +22,7 @@
   align-items: center;
   gap: 8px;
   background: #fff3e0;
-  color: #ff9800;
+  color: var(--brand);
   padding: 8px 20px;
   border-radius: 25px;
   font-size: 0.9rem;
@@ -38,7 +38,7 @@
   font-size: 36px;
   font-weight: 700;
   line-height: 1.2;
-  color: #1a1a1a;
+  color: var(--text);
   margin-bottom: 30px;
   margin-top: 20px;
 }
@@ -66,7 +66,7 @@
   backdrop-filter: blur(10px);
   padding: 20px 30px;
   border-radius: 15px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--shadow-lg);
   text-align: center;
 }
 
@@ -81,7 +81,7 @@
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  border: 3px solid #ffffff;
+  border: 3px solid var(--card);
   margin-left: -12px;
   object-fit: cover;
 }
@@ -94,13 +94,13 @@
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background: #ff9800;
+  background: var(--brand);
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 600;
-  border: 3px solid #ffffff;
+  border: 3px solid var(--card);
   margin-left: -12px;
 }
 
@@ -121,13 +121,13 @@
 .testimonials__rating-number {
   font-size: 4rem;
   font-weight: 700;
-  color: #ff9800;
+  color: var(--brand);
   line-height: 1;
 }
 
 .testimonials__rating-text {
   font-size: 1rem;
-  color: #666;
+  color: var(--muted);
 }
 
 /* Right Side */
@@ -171,7 +171,7 @@
 }
 
 .testimonials__stars .star-filled {
-  color: #ff9800;
+  color: var(--brand);
   font-size: 22px;
 }
 
@@ -211,13 +211,13 @@
 .testimonials__author-name {
   font-size: 1.2rem;
   font-weight: 700;
-  color: #1a1a1a;
+  color: var(--text);
   margin: 0 0 5px 0;
 }
 
 .testimonials__author-role {
   font-size: 0.95rem;
-  color: #666;
+  color: var(--muted);
   margin: 0;
 }
 
@@ -248,7 +248,7 @@
   justify-content: center;
   transition: all 0.3s ease;
   pointer-events: all;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow);
 }
 
 .testimonials__nav-prev {
@@ -261,9 +261,9 @@
 
 .testimonials__nav-prev:hover,
 .testimonials__nav-next:hover {
-  background: #ff9800;
+      background: var(--brand-gradient);
   color: white;
-  border-color: #ff9800;
+  border-color: var(--brand);
   transform: scale(1.1);
 }
 
