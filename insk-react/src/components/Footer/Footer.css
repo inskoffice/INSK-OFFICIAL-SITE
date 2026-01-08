@@ -28,8 +28,8 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 80px;
-  margin-bottom: 80px;
-  padding-bottom: 60px;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 /* CTA Section - Left side */

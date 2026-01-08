@@ -79,6 +79,9 @@ a {
   color: var(--brand);
 }
 
+.careers-section{
+  min-height: 40vh;
+}
 
 /* Mobile */
 @media (max-width: 576px) { 
