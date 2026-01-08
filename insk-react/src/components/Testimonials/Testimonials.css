@@ -1,0 +1,29 @@
+.feedback {
+  background: #ffffff;
+}
+
+.feedback__card {
+  background: #ffffff;
+  border: 1px solid #eef0f4;
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: var(--shadow);
+}
+
+.feedback__user {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.feedback__user img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.feedback__rating i {
+  color: #f5a524;
+}
