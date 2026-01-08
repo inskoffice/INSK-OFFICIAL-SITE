@@ -42,9 +42,9 @@ export default function About() {
           </div>
 
           {/* CTA */}
-          <a href="#contact" className="btn about-btn">
+          {/* <a href="#contact" className="btn about-btn">
             More About Us
-          </a>
+          </a> */}
         </div>
 
       </div>
