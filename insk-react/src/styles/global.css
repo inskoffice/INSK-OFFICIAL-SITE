@@ -108,3 +108,29 @@ a {
 
 /* Desktop */
 @media (min-width: 1025px) { }
+
+
+.job-details h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+.job-details .job-meta {
+  color: var(--muted);
+  margin-bottom: 24px;
+  color: var(--text);
+}
+
+.job-description {
+  white-space: pre-wrap;
+  background: #f9fafc;
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 32px;
+}
+
+.job-description p {
+    color: var(--text);
+
+}

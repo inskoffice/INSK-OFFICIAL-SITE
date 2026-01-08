@@ -1,9 +1,5 @@
-import { useState } from "react";
-import JobCard from "./JobCard";
-import "./Careers.css";
-
-// Job data with more careers
-const jobsData = {
+// Job data with full details
+export const jobsData = {
   india: [
     {
       title: "SEO Specialist",
@@ -194,48 +190,3 @@ Customer Support Lead managing service quality and team operations.
     }
   ]
 };
-
-
-// Country tabs data
-const countries = [
-  { code: "india", label: "India", flag: "🇮🇳" },
-  { code: "pakistan", label: "Pakistan", flag: "🇵🇰" },
-  { code: "srilanka", label: "Sri Lanka", flag: "🇱🇰" },
-];
-
-export default function CareersList() {
-  const [activeCountry, setActiveCountry] = useState("india");
-
-  return (
-    <section className="careers-section">
-      <div className="container">
-
-        {/* Country Tabs */}
-        <div className="country-tabs">
-          {countries.map((country) => (
-            <button
-              key={country.code}
-              onClick={() => setActiveCountry(country.code)}
-              className={`tab-btn ${activeCountry === country.code ? "active" : ""}`}
-            >
-              <span className="flag">{country.flag}</span> {country.label}
-            </button>
-          ))}
-        </div>
-
-        {/* Job Cards */}
-        <div className="jobs-grid">
-          {jobsData[activeCountry]?.length ? (
-            jobsData[activeCountry].map((job, index) => (
-              <JobCard key={index} job={job} />
-            ))
-          ) : (
-            <p className="no-jobs">
-              😔 No job openings available in {countries.find(c => c.code === activeCountry)?.label}.
-            </p>
-          )}
-        </div>
-      </div>
-    </section>
-  );
-}

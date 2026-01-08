@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function JobCard({ job }) {
   return (
     <div className="job-card">
@@ -7,9 +9,13 @@ export default function JobCard({ job }) {
         {job.dept} • {job.type}
       </p>
 
-      <a href="#apply" className="btn1">
-        Apply Now
-      </a>
+      {/* <a href="#apply" className="btn1">
+        View more
+      </a> */}
+
+      <Link to={`/careers/${job.slug}`} className="btn1">
+        View more
+      </Link>
     </div>
   );
 }
