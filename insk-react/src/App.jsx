@@ -8,6 +8,7 @@ import Team from "./components/Team/Team";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Map from "./components/Map/Map";
 import Footer from "./components/Footer/Footer";
+import Process from './components/Process/Process';
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
       <Services />
       <About />
       <Stats />
+      <Process />
       <Newsletter />
       <Team />
       <Testimonials />
