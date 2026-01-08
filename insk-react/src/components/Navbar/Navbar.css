@@ -108,7 +108,8 @@ nav {
 
   .mobile-cta .btn,
   .mobile-cta .btn1 {
-    width: 100%;
+    width: 50%;
     justify-content: center;
+    text-align: center;
   }
 }
