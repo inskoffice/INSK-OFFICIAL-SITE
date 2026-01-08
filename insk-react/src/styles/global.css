@@ -78,3 +78,25 @@ a {
   border-color: var(--brand);
   color: var(--brand);
 }
+
+
+/* Mobile */
+@media (max-width: 576px) { 
+  
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .process__step-icon{
+    display: none;
+  }
+  .testimonials__rating{
+    display: none;
+  }
+ }
+
+/* Tablet Landscape / Small Laptop */
+@media (max-width: 1024px) { }
+
+/* Desktop */
+@media (min-width: 1025px) { }
