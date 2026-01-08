@@ -277,9 +277,11 @@ h1 {
 
 .gradient-text {
   background: linear-gradient(90deg, #ff8a00, #e52e71);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;          /* standard property */
+  -webkit-background-clip: text;  /* WebKit browsers */
+  -webkit-text-fill-color: transparent; /* makes text show the gradient */
 }
+
 
 p {
   font-size: 1.2rem;

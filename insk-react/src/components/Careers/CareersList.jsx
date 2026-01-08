@@ -5,8 +5,8 @@ import "./Careers.css";
 // Job data with more careers
 const jobsData = {
   india: [
-    { title: "Frontend Developer", type: "Remote", dept: "Engineering" },
     { title: "SEO Specialist", type: "Hybrid", dept: "Marketing" },
+    { title: "Frontend Developer", type: "Onsite", dept: "Engineering" },
     { title: "Backend Developer", type: "Onsite", dept: "Engineering" },
     { title: "Product Manager", type: "Hybrid", dept: "Product" },
     { title: "Graphic Designer", type: "Remote", dept: "Design" },
@@ -21,6 +21,7 @@ const jobsData = {
   srilanka: [
     { title: "Digital Marketing Executive", type: "Onsite", dept: "Marketing" },
     { title: "Social Media Manager", type: "Remote", dept: "Marketing" },
+    { title: "SEO Specialist", type: "Hybrid", dept: "Marketing" },
     { title: "Frontend Developer", type: "Hybrid", dept: "Engineering" },
     { title: "Customer Support Lead", type: "Onsite", dept: "Support" },
   ],
