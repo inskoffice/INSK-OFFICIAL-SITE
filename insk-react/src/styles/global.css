@@ -45,9 +45,9 @@ a {
 
 /* Buttons (global consistency) */
 .btn {
-  background: var(--brand);
+  background: var(--brand-gradient);
   color: #fff;
-  box-shadow: 0 6px 18px var(--ring);
+  box-shadow: 0 8px 22px rgba(255, 61, 129, 0.35);
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 15px;
@@ -58,7 +58,8 @@ a {
 }
 
 .btn:hover {
-  background: var(--brand-700);
+  filter: brightness(1.05);
+  transform: translateY(-1px);
 }
 
 .btn1 {

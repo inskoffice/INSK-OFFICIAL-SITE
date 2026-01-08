@@ -11,11 +11,11 @@ export default function Hero() {
           </span>
 
           <h1>
-            Building <span className="brand">Digital Products</span>, Brands &
+            Building <span className="gradient-text">Digital Products</span>, Brands &
             Experiences
           </h1>
 
-          <p>
+          <p className="hero-p">
             We help businesses grow by creating innovative digital products,
             memorable brand identities, and seamless user experiences.
           </p>
