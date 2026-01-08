@@ -7,6 +7,7 @@ import Team from "../components/Team/Team";
 import Process from '../components/Process/Process';
 import Testimonials from "../components/Testimonials/Testimonials";
 import Map from "../components/Map/Map";
+import Stats from '../components/Stats/Stats';
 
 const Home = () => {
   return (
@@ -14,11 +15,10 @@ const Home = () => {
     <Hero />
     <Services />
     <About />
-    {/* <Stats /> */}
-    
-    <Newsletter />
-    <Process />
+    <Stats />
     <Team />
+    {/* <Newsletter /> */}
+    <Process />
     <Testimonials />
     <Map />
       

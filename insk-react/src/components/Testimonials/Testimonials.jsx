@@ -44,10 +44,10 @@ export default function Testimonials() {
     <section className="testimonials">
       <div className="testimonials__container">
         <div className="testimonials__left">
-          <div className="testimonials__badge">
+          {/* <div className="testimonials__badge">
             <span className="testimonials__icon">⭐</span>
             Our Testimonials
-          </div>
+          </div> */}
           
           <h2 className="testimonials__title">
             What <span class="gradient-text">Our Happy Clients</span>  Say About Us.
@@ -55,7 +55,7 @@ export default function Testimonials() {
           
           <div className="testimonials__image-wrapper">
             <img 
-              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=500&h=600&fit=crop" 
+              src="/images/insk-testimonial.jpg"  
               alt="Happy customers"
               className="testimonials__image"
             />

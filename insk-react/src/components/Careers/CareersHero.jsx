@@ -4,7 +4,7 @@ export default function CareersHero() {
   return (
     <section className="careers-hero">
       <div className="container">
-        <span className="careers-tag">💼 Careers at INSK</span>
+        <span className="careers-tag">Careers at INSK</span>
 
         <h1>
           Build Your Career With

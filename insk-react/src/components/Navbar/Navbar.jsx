@@ -24,11 +24,11 @@ export default function Navbar() {
 
         {/* NAV LINKS */}
         <div className={`nav-links ${open ? "show" : ""}`}>
-          <a href="#home" onClick={() => setOpen(false)}>Home</a>
+          <a href="/" onClick={() => setOpen(false)}>Home</a>
           <a href="#services" onClick={() => setOpen(false)}>Services</a>
           <a href="#about" onClick={() => setOpen(false)}>About Us</a>
-          <a href="#portfolio" onClick={() => setOpen(false)}>Portfolio</a>
           <a href="#client" onClick={() => setOpen(false)}>Client</a>
+          <a href="/careers" onClick={() => setOpen(false)}>Careers</a>
           <a href="#contact" onClick={() => setOpen(false)}>Contact</a>
 
           {/* MOBILE CTA */}

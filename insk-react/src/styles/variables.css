@@ -2,7 +2,7 @@
   /* ===== Brand Gradient ===== */
   --brand-start: #f39806;     /* INSK Orange */
   --brand-mid:   #ff6a3d;     /* Warm coral */
-  --brand-end:   #ff3d81;     /* Pink */
+  --brand-end:   #d44c0d;     /* Pink */
 
   --brand-gradient: linear-gradient(
     135deg,
