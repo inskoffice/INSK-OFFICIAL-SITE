@@ -9,13 +9,9 @@ export default function JobCard({ job }) {
         {job.dept} • {job.type}
       </p>
 
-      {/* <a href="#apply" className="btn1">
-        View more
-      </a> */}
-
-      <Link to={`/careers/${job.slug}`} className="btn1">
-        View more
-      </Link>
+      <a href="#apply" className="btn1">
+        <i className="fas fa-hand-point-right"></i> Apply Now
+      </a>
     </div>
   );
 }
