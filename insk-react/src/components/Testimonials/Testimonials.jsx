@@ -132,7 +132,7 @@ export default function Testimonials() {
           </div>
 
           <div className="testimonials__rating">
-            <div className="testimonials__rating-number">4.8</div>
+            <div className="testimonials__rating-number"> <span className="gradient-text">4.8</span></div>
             <div className="testimonials__rating-text">(5k+) Customer reviews</div>
           </div>
 

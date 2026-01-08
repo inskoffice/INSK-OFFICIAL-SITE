@@ -98,6 +98,9 @@ a {
   .testimonials__rating{
     display: none;
   }
+  .stats-trophy{
+    display: none;
+  }
  }
 
 /* Tablet Landscape / Small Laptop */

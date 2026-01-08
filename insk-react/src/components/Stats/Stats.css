@@ -190,7 +190,7 @@
 @media (max-width: 1024px) {
   .stats-wrapper {
     grid-template-columns: 1fr;
-    gap: 60px;
+    gap: 10px;
   }
 
   .stats-center-logo {
@@ -203,8 +203,8 @@
 /* ===================== */
 @media (max-width: 640px) {
   .stats-premium {
-    padding: 80px 0;
-    margin: 60px 10px;
+    padding: 0px 0;
+    margin: 60px 0px;
     border-radius: 24px;
   }
 

@@ -6,28 +6,28 @@ const processSteps = [
     id: 1,
     step: "Step 01",
     title: "Tailored Solutions",
-    description: "Lorem ipsum dolor sit amet, consectetuer adipiscing",
+    description: "Custom approaches designed around your brand’s unique needs.",
     icon: "🎯" // Replace with your actual icon
   },
   {
     id: 2,
     step: "Step 02",
     title: "Planning & Strategy",
-    description: "Lorem ipsum dolor sit amet, consectetuer adipiscing",
+    description: "Structured planning backed by insight and clear objectives.",
     icon: "🌐" // Replace with your actual icon
   },
   {
     id: 3,
     step: "Step 03",
     title: "Content Planing & Creation",
-    description: "Lorem ipsum dolor sit amet, consectetuer adipiscing",
+    description: "Strategically crafted content designed to inform, and inspire.",
     icon: "💡" // Replace with your actual icon
   },
   {
     id: 4,
     step: "Step 04",
     title: "Review & Delivery",
-    description: "Lorem ipsum dolor sit amet, consectetuer adipiscing",
+    description: "Refined and flawlessly delivered to ensure quality, consistency, and impact.",
     icon: "✨" // Replace with your actual icon
   }
 ];

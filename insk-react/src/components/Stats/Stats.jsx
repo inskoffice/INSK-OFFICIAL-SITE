@@ -56,7 +56,7 @@ export default function Stats() {
 
         {/* LEFT CONTENT */}
         <div className="stats-left">
-          <span className="stats-tag">★ INSK Success</span>
+          <span className="stats-tag"><span className="gradient-text">★ INSK Success</span></span>
 
           <h2>
             Expert-Led Strategies <br />

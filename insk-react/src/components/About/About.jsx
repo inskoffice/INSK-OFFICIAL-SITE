@@ -12,7 +12,7 @@ export default function About() {
 
         {/* RIGHT CONTENT */}
         <div className="about-content">
-          <span className="about-tag">★ About Company</span>
+          <span className="about-tag"><span className="gradient-text">★ About Company</span></span>
 
           <h2>
             Elevating Your Brand’s Influence Through Bold,
