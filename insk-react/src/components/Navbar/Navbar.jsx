@@ -9,7 +9,7 @@ export default function Navbar() {
       <div className="container nav-wrap">
         {/* LOGO */}
         <a href="#home" className="logo">
-          <img src="/images/insk.png" alt="INSK Logo" />
+          <img src="/images/insk-1.png" alt="INSK Logo" />
         </a>
 
         {/* MOBILE MENU BUTTON */}
@@ -25,8 +25,8 @@ export default function Navbar() {
         {/* NAV LINKS */}
         <div className={`nav-links ${open ? "show" : ""}`}>
           <a href="#home" onClick={() => setOpen(false)}>Home</a>
-          <a href="#about" onClick={() => setOpen(false)}>About Us</a>
           <a href="#services" onClick={() => setOpen(false)}>Services</a>
+          <a href="#about" onClick={() => setOpen(false)}>About Us</a>
           <a href="#portfolio" onClick={() => setOpen(false)}>Portfolio</a>
           <a href="#client" onClick={() => setOpen(false)}>Client</a>
           <a href="#contact" onClick={() => setOpen(false)}>Contact</a>

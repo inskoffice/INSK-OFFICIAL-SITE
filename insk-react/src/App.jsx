@@ -17,9 +17,10 @@ export default function App() {
       <Hero />
       <Services />
       <About />
-      <Stats />
-      <Process />
+      {/* <Stats /> */}
+      
       <Newsletter />
+      <Process />
       <Team />
       <Testimonials />
       <Map />

@@ -1,5 +1,122 @@
-.about-grid {
+/* ===================== */
+/* About Section Wrapper */
+/* ===================== */
+.about-dark {
+  background: radial-gradient(
+      800px 400px at 80% 80%,
+      rgba(255, 61, 129, 0.12),
+      transparent 70%
+    ),
+    linear-gradient(180deg, #0d0f12 0%, #111318 100%);
+  color: #ffffff;
+  padding: 100px 0;
+}
+
+/* Layout */
+.about-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 34px;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* ===================== */
+/* Image */
+/* ===================== */
+.about-image {
+  position: relative;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 28px;
+  clip-path: polygon(0 0, 92% 0, 100% 50%, 92% 100%, 0 100%);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+}
+
+/* ===================== */
+/* Content */
+/* ===================== */
+.about-content {
+  max-width: 560px;
+}
+
+.about-tag {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: var(--brand);
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.about-content h2 {
+  font-size: clamp(28px, 3vw, 42px);
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+.about-desc {
+  color: #cbd5e1;
+  line-height: 1.7;
+  margin-bottom: 26px;
+}
+
+/* ===================== */
+/* Feature Box */
+/* ===================== */
+.about-features {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 22px;
+  margin-bottom: 28px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #f1f5f9;
+  font-size: 15px;
+}
+
+.feature-item + .feature-item {
+  margin-top: 12px;
+}
+
+.feature-item span {
+  color: var(--brand);
+  font-weight: bold;
+}
+
+/* ===================== */
+/* CTA */
+/* ===================== */
+.about-btn {
+  padding: 14px 26px;
+}
+
+/* ===================== */
+/* Responsive */
+/* ===================== */
+@media (max-width: 1024px) {
+  .about-wrapper {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .about-image img {
+    clip-path: none;
+    border-radius: 22px;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-dark {
+    padding: 72px 0;
+  }
+
+  .about-content h2 {
+    font-size: 26px;
+  }
 }

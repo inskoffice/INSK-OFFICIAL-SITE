@@ -6,8 +6,8 @@ export default function Hero() {
       <div className="container hero-grid">
         <div>
           <span className="chip">
-            <i className="ri-flashlight-fill"></i>
-            Creative • Data-Driven • Reliable
+            {/* <i className="ri-flashlight-fill"></i> */}
+            {/* Creative • Data-Driven • Reliable */}
           </span>
 
           <h1>
@@ -22,7 +22,7 @@ export default function Hero() {
 
           <div className="hero-cta">
             <a className="btn" href="https://wa.me/94760685652">
-              Get a Free Quote
+              Contact Us Now
             </a>
             <a className="btn1" href="#services">
               Explore Services
@@ -31,7 +31,7 @@ export default function Hero() {
         </div>
 
         <div className="hero-img hero-card">
-          <img src="/images/head.png" alt="Creative workspace" />
+          <img src="/images/head1.png" alt="Creative workspace" />
         </div>
       </div>
     </header>
