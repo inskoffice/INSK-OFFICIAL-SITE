@@ -101,7 +101,7 @@ export default function ContactUs() {
           <div className="contact-left">
             <h2>Contact Us</h2>
 
-            <h3>Feel free to ask <span className="gradient-text">anything, anytime</span> <br></br> Just Contact</h3>
+            <h3>Feel free to ask <span className="gradient-text">anything, anytime.</span> <br></br> Just Contact</h3>
 
             <div className="contact-info">
   <a href="mailto:inskoffice@gmail.com" className="contact-email">
