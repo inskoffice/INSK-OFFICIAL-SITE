@@ -127,6 +127,7 @@
     transition: all 0.4s ease;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 10px;
 }
 
 .process__step.active .process__step-icon {
@@ -215,3 +216,17 @@
         min-height: 180px;
     }
 }
+
+.process__step-icon svg {
+  width: 42px;
+  height: 42px;
+  color: #ff6a2b;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.process__step-icon:hover svg,
+.process__step-icon.active svg {
+  transform: scale(1.1);
+  color: #ffffff;
+}
+

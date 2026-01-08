@@ -9,7 +9,8 @@ html {
 body {
   margin: 0;
   font-family: Poppins, system-ui, sans-serif;
-  background: #f6f8fc; /* slightly cooler, cleaner */
+  background: #f6f8fc;
+  /* slightly cooler, cleaner */
   color: var(--text);
 }
 
@@ -81,30 +82,82 @@ a {
   color: var(--brand);
 }
 
-.careers-section{
+.careers-section {
   min-height: 40vh;
 }
 
-/* Mobile */
-@media (max-width: 576px) { 
-  
+.job-card h4,
+.job-card p {
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.job-card .btn1 {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.footer__contact-item {
+   
+    padding: 10px 0px;
+}
+.footer__contact-item:first-child {
+  padding-bottom: 10px 0px;
+  padding-top:  0px;
+}
+
+.country-tabs .tab-btn:hover{
+      color: #ff6f38;
+    border-bottom: 2px solid #fd762f;
+}
+
+.country-tabs .tab-btn.active:hover{
+      color: #fff;
+    border-bottom: 0px solid #fd762f;
+}
+
+
+/* Mobile */
+@media (max-width: 576px) {}
 
 /* Tablet */
 @media (max-width: 768px) {
-  .process__step-icon{
+  
+  .process__step-icon {
     display: none;
   }
-  .testimonials__rating{
+
+  .testimonials__rating {
     display: none;
   }
-  .stats-trophy{
+
+  .stats-trophy {
     display: none;
   }
- }
+
+  .section {
+    padding: 32px 0;
+  }
+
+  .about-dark {
+    margin: 40px 20px;
+  }
+
+  .contact-left h2 {
+    display: none;
+  }
+
+  .testimonials__container {
+    gap: 0px;
+  }
+
+  .careers-section {
+    padding: 60px 0px;
+  }
+}
 
 /* Tablet Landscape / Small Laptop */
-@media (max-width: 1024px) { }
+@media (max-width: 1024px) {}
 
 /* Desktop */
 @media (min-width: 1025px) { }
