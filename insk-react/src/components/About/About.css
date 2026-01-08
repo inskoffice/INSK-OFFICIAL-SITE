@@ -10,6 +10,9 @@
     linear-gradient(180deg, #0d0f12 0%, #111318 100%);
   color: #ffffff;
   padding: 30px 0;
+  /* padding: 120px 0; */
+  margin: 80px 20px;
+  border-radius: 20px;
 }
 
 /* Layout */

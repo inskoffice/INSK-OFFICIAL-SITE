@@ -58,12 +58,29 @@ export default function Footer() {
               </ul>
             </div>
 
+            <div className="footer__column">
+              <div className="footer__contact-item">
+                <h4 className="footer__contact-title">Say hello!</h4>
+                <p className="footer__contact-text">inskoffice@gmail.com</p>
+              </div>
+
+              <div className="footer__contact-item">
+                <h4 className="footer__contact-title">Location</h4>
+                <p className="footer__contact-text">Mireka Tower, Kirulapone, Colombo, Western 00500, LK</p>
+              </div>
+
+              <div className="footer__contact-item">
+                <h4 className="footer__contact-title">Phone Number</h4>
+                <p className="footer__contact-text">+94 760685652</p>
+              </div> 
+            </div>
+
           </div>
         </div>
 
         {/* Bottom Section: Contact Info + Socials */}
         <div className="footer__bottom">
-          <div className="footer__contact">
+          {/* <div className="footer__contact">
             <div className="footer__contact-item">
               <h4 className="footer__contact-title">Say hello!</h4>
               <p className="footer__contact-text">inskoffice@gmail.com</p>
@@ -78,7 +95,7 @@ export default function Footer() {
               <h4 className="footer__contact-title">Phone Number</h4>
               <p className="footer__contact-text">+94 760685652</p>
             </div>
-          </div>
+          </div> */}
 
           <div className="footer__socials">
             <a href="#twitter" aria-label="Twitter">

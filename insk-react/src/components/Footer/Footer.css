@@ -33,12 +33,12 @@
 }
 
 /* CTA Section - Left side */
-/* .footer__cta {
-  max-width: 600px;
-} */
+.footer__cta {
+  max-width: 500px;
+}
 
 .footer__cta-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   color: var(--card);
   line-height: 1.3;
@@ -52,7 +52,7 @@
   border-radius: 50px;
   padding: 8px 8px 8px 24px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  max-width: 500px;
+  max-width: 450px;
 }
 
 .footer__input {
@@ -139,8 +139,8 @@
 }
 
 .footer__contact {
-  display: flex;
-  gap: 80px;
+  display: flex-bx;
+  /* gap: 80px; */
   flex: 1;
 }
 
@@ -152,7 +152,7 @@
   font-size: 1.1rem;
   font-weight: 600;
   color: var(--card);
-  margin: 0 0 12px 0;
+  margin: 0 0 4px 0;
 }
 
 .footer__contact-text {
@@ -256,6 +256,8 @@
   .footer__subscribe {
     border-radius: var(--radius);
     padding: 16px;
+    max-width: 400px;
+    height: 70px;
     
   }
 
