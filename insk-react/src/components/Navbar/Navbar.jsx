@@ -8,7 +8,7 @@ export default function Navbar() {
     <nav>
       <div className="container nav-wrap">
         {/* LOGO */}
-        <a href="#home" className="logo">
+        <a href="/" className="logo">
           <img src="/images/insk-1.png" alt="INSK Logo" />
         </a>
 
