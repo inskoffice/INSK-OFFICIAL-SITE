@@ -5,10 +5,15 @@ export default function About() {
     <section id="about" className="about-dark">
       <div className="container about-wrapper">
 
-        {/* LEFT IMAGE */}
-        <div className="about-image">
-          <img src="/images/about-team.jpg" alt="About INSK" />
+        {/* LEFT CONTENT */}
+
+        <div className="LeftContent">
+          <div className="about-image">
+            <img src="/images/about-team.jpg" alt="About INSK" />
+          </div>
         </div>
+
+
 
         {/* RIGHT CONTENT */}
         <div className="about-content">
@@ -24,7 +29,7 @@ export default function About() {
             solutions and media marketing organization
             headquartered in Sri Lanka, with a team of over 100
             professionals dedicated to helping businesses build strong,
-            impactful, and sustainable digital presences. 
+            impactful, and sustainable digital presences.
           </p>
 
           {/* <p className="about-desc">
