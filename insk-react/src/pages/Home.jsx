@@ -22,7 +22,7 @@ const Home = () => {
         keywords="digital marketing agency, web design, SEO services, branding agency, INSK"
         url="https://inskgroup.com/"
       />
-    <Hero />
+    {/* <Hero /> */}
     <Services />
     <About />
     <Stats />
