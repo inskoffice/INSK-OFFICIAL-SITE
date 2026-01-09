@@ -126,7 +126,7 @@ export default function JobDetails() {
               </header>
 
               <div className="job-meta">
-                <span>📍 {job.location}</span>
+                <span>🌏 {job.location}</span>
                 <span>💼 {job.type}</span>
                 <span>🏢 {job.dept}</span>
                 {job.salary && <span>💰 {job.salary}</span>}
@@ -141,7 +141,7 @@ export default function JobDetails() {
                   if (section.type === 'section') {
                     return (
                       <div key={i} className="job-section">
-                        <h3>{section.title}</h3>
+                        <h2>{section.title}</h2>
                         {section.description && (
                           <p>{section.description}</p>
                         )}
