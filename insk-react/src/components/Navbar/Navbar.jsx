@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./Navbar.css";
+import { Link, useLocation } from "react-router-dom";
+
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -29,18 +31,29 @@ export default function Navbar() {
 
         {/* NAV LINKS */}
         <div className={`nav-links ${open ? "show" : ""}`}>
-          <a href="/" onClick={() => setOpen(false)}>Home</a>
-          <a href="#services" onClick={() => setOpen(false)}>Services</a>
-          <a href="#about" onClick={() => setOpen(false)}>About Us</a>
-          {/* <a href="#client" onClick={() => setOpen(false)}>Client</a> */}
-          <a href="#contact" onClick={() => setOpen(false)}>Contact</a>
-          <a href="/careers" onClick={() => setOpen(false)}>Careers</a>
+          <Link to="/" onClick={() => setOpen(false)}>Home</Link>
 
-          {/* MOBILE CTA (only "All Our Services" button now) */}
+          <Link to="/#services" onClick={() => setOpen(false)}>
+            Services
+          </Link>
+
+          <Link to="/#about" onClick={() => setOpen(false)}>
+            About Us
+          </Link>
+
+          <Link to="/#contact" onClick={() => setOpen(false)}>
+            Contact
+          </Link>
+
+          <Link to="/careers" onClick={() => setOpen(false)}>
+            Careers
+          </Link>
+
+          {/* MOBILE CTA */}
           <div className="mobile-cta">
-            <a className="btn" href="#services">
+            <Link to="/#services" className="btn" onClick={() => setOpen(false)}>
               All Our Services
-            </a>
+            </Link>
           </div>
         </div>
 
