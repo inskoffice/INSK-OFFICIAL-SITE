@@ -1,6 +1,8 @@
 import { useParams } from "react-router-dom";
 import {jobsData} from "../data/jobsData";
 import '../styles/global.css';
+import SEO from "../components/SEO/SEO";
+
 
 export default function JobDetails() {
   const { jobSlug } = useParams();
@@ -35,6 +37,12 @@ export default function JobDetails() {
 
   return (
     <section className="job-details section">
+      <SEO
+        title={`${job.title} Job in ${job.location}`}
+        description={`Apply for the ${job.title} role at INSK in ${job.location}. ${job.shortDescription}`}
+        keywords={`${job.title}, INSK careers, ${job.location} jobs`}
+        url={`https://insk.vercel.app/careers/${job.slug}`}
+      />
       <div className="container">
         <h1>{job.title}</h1>
 

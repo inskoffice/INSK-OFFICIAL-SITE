@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home";
 import Careers from "./pages/Careers";
+import Team from "./components/Team/Team"
 
 import JobDetails from "./pages/JobDetails";
 
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/careers/:jobSlug" element={<JobDetails />} />
+        <Route path="/contact" element={<Team />} />
       </Routes>
       <Footer />
     </>
