@@ -36,7 +36,7 @@
   cursor: pointer;
   font-weight: 600;
   font-size: larger;
-  font-family:Arial, Helvetica, sans-serif
+  font-family: Arial, Helvetica, sans-serif
 }
 
 .country-tabs button.active {
@@ -154,7 +154,7 @@
   background: #fff;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -163,7 +163,7 @@
 
 .job-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 .job-title {
@@ -248,7 +248,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+  background: rgba(0, 0, 0, 0.5);
+  /* Dark overlay for readability */
   z-index: 1;
 }
 
@@ -280,9 +281,12 @@ h1 {
 
 .gradient-text {
   background: linear-gradient(90deg, #ff8a00, #e52e71);
-  background-clip: text;          /* standard property */
-  -webkit-background-clip: text;  /* WebKit browsers */
-  -webkit-text-fill-color: transparent; /* makes text show the gradient */
+  background-clip: text;
+  /* standard property */
+  -webkit-background-clip: text;
+  /* WebKit browsers */
+  -webkit-text-fill-color: transparent;
+  /* makes text show the gradient */
 }
 
 
@@ -347,8 +351,7 @@ p {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1470&q=80")
-    center/cover no-repeat;
+  background: url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1470&q=80") center/cover no-repeat;
   color: #fff;
 }
 
@@ -476,10 +479,15 @@ p {
 
 /* ================= LEFT JOB LIST ================= */
 .jobs-list {
-  background: #f9fafb;
+  background: #ffffff;
   border-radius: 20px;
   padding: 24px;
-  border: 1px solid #e5e7eb;
+  box-shadow: var(--shadow);
+}
+
+.job-list-item:hover {
+  background: linear-gradient(135deg, rgba(255, 140, 0, 0.12), rgba(255, 60, 120, 0.12)) !important;
+  border: 1px solid rgba(255, 140, 0, 0.25) !important;
 }
 
 .jobs-list h4 {
@@ -494,7 +502,8 @@ p {
   margin-bottom: 12px;
   text-decoration: none;
   color: inherit;
-  border: 1px solid transparent;
+  box-shadow: var(--shadow);
+  border: 1px solid #aaaaaa85;
   transition: all 0.2s ease;
 }
 
@@ -517,8 +526,8 @@ p {
 
 .job-list-item span {
   font-size: 12px;
-  color: var(--brand);
-  font-weight: 600;
+  color: #7f7f7f;
+  font-weight: 500;
 }
 
 /* ================= RIGHT JOB DETAILS ================= */
@@ -617,4 +626,12 @@ p {
   .job-meta {
     gap: 12px;
   }
+}
+
+
+.careers-page {
+    background-image: url('/public/images/about-insk.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
