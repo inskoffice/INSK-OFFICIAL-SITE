@@ -24,14 +24,14 @@ export default function JobDetails() {
   }
 
   const mailToLink = `mailto:${job.email}
-?subject=Application for ${job.title}
-&body=Hello INSK Team,%0D%0A%0D%0A
-I am interested in applying for the ${job.title} position in ${job.location}.%0D%0A
-Employment Type: ${job.type}%0D%0A
-Department: ${job.dept}%0D%0A%0D%0A
-Please find my resume attached.%0D%0A%0D%0A
-Regards,%0D%0A
-[Your Name]`;
+      ?subject=Application for ${job.title}
+      &body=Hello INSK Team,%0D%0A%0D%0A
+      I am interested in applying for the ${job.title} position in ${job.location}.%0D%0A
+      Employment Type: ${job.type}%0D%0A
+      Department: ${job.dept}%0D%0A%0D%0A
+      Please find my resume attached.%0D%0A%0D%0A
+      Regards,%0D%0A
+      [Your Name]`;
 
   return (
     <section className="job-details section">
