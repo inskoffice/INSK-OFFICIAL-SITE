@@ -64,7 +64,7 @@ export default function Stats() {
           </h2>
 
           <div className="stats-years">
-            <span className="stats-years-num">10+</span>
+            <span className="stats-years-num">3+</span>
             <span className="stats-years-text">
               Years of Experience <br />
               Delivering Quality Solutions
