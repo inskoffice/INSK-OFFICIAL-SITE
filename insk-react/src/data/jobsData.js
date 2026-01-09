@@ -141,7 +141,18 @@ HR Manager overseeing recruitment and people operations.
       location: "Sri Lanka",
       email: "careers@insk.com",
       description: `
-Digital Marketing Executive to manage paid and organic campaigns.
+  We are looking for a Digital Marketing Executive to plan, execute,
+  and optimize digital campaigns across multiple platforms.
+
+  Responsibilities:
+  • Manage paid & organic campaigns
+  • Analyze performance metrics
+  • Coordinate with design & content teams
+
+  Requirements:
+  • 1–3 years experience in digital marketing
+  • Knowledge of Google Ads & Meta Ads
+  • Strong analytical skills
       `
     },
     {
@@ -152,7 +163,17 @@ Digital Marketing Executive to manage paid and organic campaigns.
       location: "Sri Lanka",
       email: "careers@insk.com",
       description: `
-Social Media Manager to grow brand presence across platforms.
+  Social Media Manager responsible for growing brand presence and
+  engagement across social platforms.
+
+  Responsibilities:
+  • Content planning & scheduling
+  • Community management
+  • Performance reporting
+
+  Requirements:
+  • Experience with Instagram, Facebook, LinkedIn
+  • Strong communication skills
       `
     },
     {
@@ -163,7 +184,16 @@ Social Media Manager to grow brand presence across platforms.
       location: "Sri Lanka",
       email: "careers@insk.com",
       description: `
-SEO Specialist to improve organic traffic and visibility.
+  SEO Specialist to improve website rankings and organic traffic.
+
+  Responsibilities:
+  • Keyword research & optimization
+  • Technical SEO audits
+  • Competitor analysis
+
+  Requirements:
+  • On-page & off-page SEO experience
+  • Familiar with analytics tools
       `
     },
     {
@@ -174,7 +204,13 @@ SEO Specialist to improve organic traffic and visibility.
       location: "Sri Lanka",
       email: "careers@insk.com",
       description: `
-Frontend Developer to build responsive UI components.
+  Frontend Developer responsible for building responsive and
+  high-performance user interfaces.
+
+  Requirements:
+  • React / JavaScript
+  • HTML, CSS
+  • API integration experience
       `
     },
     {
@@ -185,7 +221,17 @@ Frontend Developer to build responsive UI components.
       location: "Sri Lanka",
       email: "careers@insk.com",
       description: `
-Customer Support Lead managing service quality and team operations.
+  Customer Support Lead to manage support operations and ensure
+  high customer satisfaction.
+
+  Responsibilities:
+  • Handle escalations
+  • Train support agents
+  • Maintain service quality
+
+  Requirements:
+  • Leadership experience
+  • Strong communication skills
       `
     }
   ]

@@ -25,7 +25,7 @@ export default function Hero() {
               Contact Us Now
             </a>
             <a className="btn1" href="#services">
-              Explore Services
+              Learn more About Us
             </a>
           </div>
         </div>

@@ -140,59 +140,64 @@ HR Manager overseeing recruitment and people operations.
     {
       title: "Digital Marketing Executive",
       slug: "digital-marketing-executive-srilanka",
+      shortDescription: "Plan and optimize paid & organic digital campaigns.",
       type: "Onsite",
       dept: "Marketing",
       location: "Sri Lanka",
       email: "careers@insk.com",
       description: `
-Digital Marketing Executive to manage paid and organic campaigns.
-      `
-    },
+  We are seeking a Digital Marketing Executive to plan, execute, and
+  optimize digital marketing campaigns across multiple platforms.`
+  },
     {
       title: "Social Media Manager",
       slug: "social-media-manager-srilanka",
+      shortDescription: "Manage content, engagement, and growth on social platforms.",
       type: "Remote",
       dept: "Marketing",
       location: "Sri Lanka",
       email: "careers@insk.com",
       description: `
-Social Media Manager to grow brand presence across platforms.
-      `
-    },
+  We are looking for a Social Media Manager to strengthen brand presence `
+  },
     {
       title: "SEO Specialist",
       slug: "seo-specialist-srilanka",
+      shortDescription: "Improve search rankings and drive organic traffic.",
       type: "Hybrid",
       dept: "Marketing",
       location: "Sri Lanka",
       email: "careers@insk.com",
       description: `
-SEO Specialist to improve organic traffic and visibility.
-      `
-    },
+  SEO Specialist responsible for improving search visibility and
+  driving organic traffic.`
+  },
     {
       title: "Frontend Developer",
       slug: "frontend-developer-srilanka",
+      shortDescription: "Build responsive, high-performance web interfaces.",
       type: "Hybrid",
       dept: "Engineering",
       location: "Sri Lanka",
       email: "careers@insk.com",
       description: `
-Frontend Developer to build responsive UI components.
-      `
-    },
+  Frontend Developer to build responsive and high-performance user
+  interfaces for web applications.`
+  },
     {
       title: "Customer Support Lead",
       slug: "customer-support-lead-srilanka",
+      shortDescription: "Lead support operations and ensure service quality.",
       type: "Onsite",
       dept: "Support",
       location: "Sri Lanka",
       email: "careers@insk.com",
       description: `
-Customer Support Lead managing service quality and team operations.
-      `
-    }
+  Customer Support Lead responsible for managing support operations and
+  ensuring high levels of customer satisfaction.`
+  }
   ]
+
 };
 
 
