@@ -6,12 +6,14 @@ import Careers from "./pages/Careers";
 import Team from "./components/Team/Team"
 
 import JobDetails from "./pages/JobDetails";
+import ScrollToHash from "./components/ScrollToHash";
 
 
 export default function App() {
   return (
     <>
       <Navbar />
+      <ScrollToHash />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/careers" element={<Careers />} />
