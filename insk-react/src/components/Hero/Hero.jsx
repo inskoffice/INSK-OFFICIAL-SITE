@@ -16,8 +16,8 @@ export default function Hero() {
           </h1>
 
           <p className="hero-p">
-            We help businesses grow by creating innovative digital products,
-            memorable brand identities, and seamless user experiences.
+            We are an international Digital marketing and promotion company specializing in helping businesses, brands, and individuals grow their digital presence across global platforms. 
+            INSK Group operates in a highly professional, structured, and performance-oriented environment.
           </p>
 
           <div className="hero-cta">

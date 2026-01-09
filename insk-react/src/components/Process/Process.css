@@ -3,6 +3,8 @@
     padding: 100px 20px;
     position: relative;
     overflow: hidden;
+    margin: 0px 20px;
+  border-radius: 20px;
 }
 
 .process::before {
