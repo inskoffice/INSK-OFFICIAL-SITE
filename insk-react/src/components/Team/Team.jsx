@@ -95,7 +95,7 @@ export default function ContactUs() {
   };
 
   return (
-    <section className="contact-section">
+    <section className="contact-section" id="contact">
       <div className="contact-wrapper">
         <div className="contact-container">
           <div className="contact-left">
