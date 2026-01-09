@@ -322,3 +322,140 @@ p {
     font-size: 1rem;
   }
 }
+
+
+.careers-layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  min-height: 100vh;
+}
+
+/* LEFT */
+.jobs-list {
+  border: 1px solid #e5e7eb;
+  padding: 24px;
+  background: #f9fafb;
+  padding: 50px 0;
+  margin: 40px 40px;
+  border-radius: 20px;
+}
+
+/* RIGHT */
+.job-details-panel {
+  padding: 40px;
+  /* background: #fff; */
+}
+
+.jobs-list h4 {
+  margin-bottom: 16px;
+  margin-left: 15px;
+}
+
+.job-list-item {
+  display: block;
+  padding: 14px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+.job-list-item.active,
+.job-list-item:hover {
+  border-color: var(--brand);
+  background: #fff;
+}
+
+.job-list-item h5 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.job-list-item p {
+  margin: 4px 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.job-list-item span {
+  font-size: 12px;
+  color: var(--brand);
+}
+
+/* RIGHT PANEL */
+.job-details-panel {
+  padding: 40px;
+  max-width: 900px;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 20px 0;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.job-content p {
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.job-btn {
+  background: var(--brand-gradient);
+  color: #fff;
+  box-shadow: 0 8px 22px rgba(255, 61, 129, 0.35);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 30px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  margin-top: 100px;
+}
+
+
+/* 🔥 MOBILE FIX */
+@media (max-width: 1024px) {
+  .careers-layout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .job-details-panel {
+    order: 1; /* SHOW FIRST */
+  }
+
+  .jobs-list {
+    order: 2; /* MOVE BELOW */
+    border-right: none;
+    border-top: 1px solid #e5e7eb;
+  }
+}
+
+
+.job-details-panel {
+  /* background: #fff; */
+  color: #0f172a;
+}
+
+.job-content {
+  margin-top: 24px;
+}
+
+.job-content p {
+  color: #1f2937;   /* DARK TEXT */
+  opacity: 1;
+  line-height: 1.7;
+  font-size: 15px;
+}

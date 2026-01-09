@@ -1,74 +1,72 @@
-import { useParams } from "react-router-dom";
-import { useEffect } from "react";
-import {jobsData} from "../data/jobsData";
-import '../styles/global.css';
+import { useParams, Link } from "react-router-dom";
+import { useMemo } from "react";
+import { jobsData } from "../data/jobsData";
 import SEO from "../components/SEO/SEO";
-
+// import '../styles/global.css';
 
 export default function JobDetails() {
   const { jobSlug } = useParams();
 
-  // Flatten all country jobs into one array
-  const allJobs = Object.values(jobsData).flat();
-
+  const allJobs = useMemo(() => Object.values(jobsData).flat(), []);
   const job = allJobs.find(j => j.slug === jobSlug);
 
-  // Scroll to top on component mount or when jobSlug changes
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  }, [jobSlug]);
+  if (!job) return <h2>Job not found</h2>;
 
-  if (!job) {
-    return (
-      <section className="job-details section">
-        <div className="container">
-          <h2>Job not found</h2>
-          <p className="muted">
-            The job you're looking for does not exist or has been closed.
-          </p>
-        </div>
-      </section>
-    );
-  }
-
-  const mailToLink = `mailto:${job.email}
-      ?subject=Application for ${job.title}
-      &body=Hello INSK Team,%0D%0A%0D%0A
-      I am interested in applying for the ${job.title} position in ${job.location}.%0D%0A
-      Employment Type: ${job.type}%0D%0A
-      Department: ${job.dept}%0D%0A%0D%0A
-      Please find my resume attached.%0D%0A%0D%0A
-      Regards,%0D%0A
-      [Your Name]`;
+  const mailTo = `mailto:${job.email}?subject=${encodeURIComponent(
+    `Application for ${job.title}`
+  )}`;
 
   return (
-    <section className="job-details section">
+    <section className="careers-layout">
       <SEO
-        title={`${job.title} Job in ${job.location}`}
-        description={`Apply for the ${job.title} role at INSK in ${job.location}. ${job.shortDescription}`}
-        keywords={`${job.title}, INSK careers, ${job.location} jobs`}
-        url={`https://insk.vercel.app/careers/${job.slug}`}
+        title={`${job.title} | INSK Careers`}
+        description={job.shortDescription}
       />
-      <div className="container">
-        <h1>{job.title}</h1>
 
-        <p className="job-meta">
-          {job.dept} • {job.type} • {job.location}
-        </p>
+      {/* LEFT – JOB LIST */}
+      <aside className="jobs-list">
+        <h4>{allJobs.length} Jobs Found</h4>
 
-        <div className="job-description">
-          {job.description.split("\n").map((line, index) => (
-            <p key={index}>{line}</p>
-          ))}
+        {allJobs.map(j => (
+          <Link
+            key={j.slug}
+            to={`/careers/${j.slug}`}
+            className={`job-list-item ${j.slug === jobSlug ? "active" : ""}`}
+          >
+            <h5>{j.title}</h5>
+            <p>{j.location}</p>
+            <span>{j.type}</span>
+          </Link>
+        ))}
+      </aside>
+
+      {/* RIGHT – JOB DETAILS */}
+      <main className="job-details-panel">
+        <header className="job-header">
+          <h1>{job.title}</h1>
+          {/* <a href={mailTo} className="btn">Apply Now</a> */}
+        </header>
+
+        <div className="job-meta">
+          <span>📍 {job.location}</span>
+          <span>💼 {job.type}</span>
+          <span>🏢 {job.dept}</span>
+          {job.salary && <span>💰 {job.salary}</span>}
         </div>
 
-        <a href={mailToLink} className="btn">
-          Apply Now
-        </a>
-      </div>
+        <section className="job-content">
+          {job.description
+            .trim()
+            .split("\n")
+            .filter(Boolean)
+            .map((line, i) => (
+              <p key={i}>{line}</p>
+            ))}
+
+          {/* <a href={mailTo} className="job-btn">Apply Now</a> */}
+        </section>
+        <a href={mailTo} className="job-btn">Apply Now</a>
+      </main>
     </section>
   );
 }

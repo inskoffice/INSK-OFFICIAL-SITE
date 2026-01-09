@@ -10,7 +10,7 @@ export default function JobCard({ job }) {
       </p>
 
       <Link to={`/careers/${job.slug}`} className="btn1">
-        Apply Now
+        More Details
       </Link>
     </div>
   );

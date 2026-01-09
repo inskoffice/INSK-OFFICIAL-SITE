@@ -8,6 +8,7 @@ const jobsData = {
     {
       title: "SEO Specialist",
       slug: "seo-specialist-india",
+      shortDescription: "Improve search rankings and drive organic traffic growth.",
       type: "Hybrid",
       dept: "Marketing",
       location: "India",
@@ -25,6 +26,7 @@ Requirements:
     {
       title: "Frontend Developer",
       slug: "frontend-developer-india",
+      shortDescription: "Build modern, responsive user interfaces using React.",
       type: "Onsite",
       dept: "Engineering",
       location: "India",
@@ -41,6 +43,7 @@ Requirements:
     {
       title: "Backend Developer",
       slug: "backend-developer-india",
+      shortDescription: "Develop scalable backend services and REST APIs.",
       type: "Onsite",
       dept: "Engineering",
       location: "India",
@@ -57,6 +60,7 @@ Requirements:
     {
       title: "Product Manager",
       slug: "product-manager-india",
+      shortDescription: "Own product roadmap and coordinate cross-functional teams.",
       type: "Hybrid",
       dept: "Product",
       location: "India",
@@ -68,6 +72,7 @@ Product Manager to define roadmap and manage cross-functional teams.
     {
       title: "Graphic Designer",
       slug: "graphic-designer-india",
+      shortDescription: "Create visually engaging brand and marketing assets.",
       type: "Remote",
       dept: "Design",
       location: "India",
@@ -79,6 +84,7 @@ Graphic Designer to create engaging brand visuals and assets.
     {
       title: "Data Analyst",
       slug: "data-analyst-india",
+      shortDescription: "Analyze data and generate actionable business insights.",
       type: "Onsite",
       dept: "Data",
       location: "India",
@@ -93,6 +99,7 @@ Data Analyst to analyze datasets and generate business insights.
     {
       title: "UI/UX Designer",
       slug: "ui-ux-designer-pakistan",
+      shortDescription: "Design intuitive, user-centered digital experiences.",
       type: "Remote",
       dept: "Design",
       location: "Pakistan",
@@ -104,6 +111,7 @@ UI/UX Designer focused on user-centered digital experiences.
     {
       title: "Content Writer",
       slug: "content-writer-pakistan",
+      shortDescription: "Write engaging content for blogs, websites, and marketing.",
       type: "Hybrid",
       dept: "Marketing",
       location: "Pakistan",
@@ -115,6 +123,7 @@ Content Writer to craft blogs, website copy, and marketing content.
     {
       title: "Full Stack Developer",
       slug: "full-stack-developer-pakistan",
+      shortDescription: "Work across frontend and backend systems end-to-end.",
       type: "Onsite",
       dept: "Engineering",
       location: "Pakistan",
@@ -126,6 +135,7 @@ Full Stack Developer working across frontend and backend systems.
     {
       title: "HR Manager",
       slug: "hr-manager-pakistan",
+      shortDescription: "Lead recruitment, HR operations, and people management.",
       type: "Onsite",
       dept: "Human Resources",
       location: "Pakistan",
@@ -146,9 +156,10 @@ HR Manager overseeing recruitment and people operations.
       location: "Sri Lanka",
       email: "insk.careers@outlook.com",
       description: `
-  We are seeking a Digital Marketing Executive to plan, execute, and
-  optimize digital marketing campaigns across multiple platforms.`
-  },
+We are seeking a Digital Marketing Executive to plan, execute, and
+optimize digital marketing campaigns across multiple platforms.
+      `
+    },
     {
       title: "Social Media Manager",
       slug: "social-media-manager-srilanka",
@@ -158,8 +169,9 @@ HR Manager overseeing recruitment and people operations.
       location: "Sri Lanka",
       email: "insk.careers@outlook.com",
       description: `
-  We are looking for a Social Media Manager to strengthen brand presence `
-  },
+We are looking for a Social Media Manager to strengthen brand presence.
+      `
+    },
     {
       title: "SEO Specialist",
       slug: "seo-specialist-srilanka",
@@ -169,9 +181,10 @@ HR Manager overseeing recruitment and people operations.
       location: "Sri Lanka",
       email: "insk.careers@outlook.com",
       description: `
-  SEO Specialist responsible for improving search visibility and
-  driving organic traffic.`
-  },
+SEO Specialist responsible for improving search visibility and
+driving organic traffic.
+      `
+    },
     {
       title: "Frontend Developer",
       slug: "frontend-developer-srilanka",
@@ -181,24 +194,13 @@ HR Manager overseeing recruitment and people operations.
       location: "Sri Lanka",
       email: "insk.careers@outlook.com",
       description: `
-  Frontend Developer to build responsive and high-performance user
-  interfaces for web applications.`
-  },
-  //   {
-  //     title: "Customer Support Lead",
-  //     slug: "customer-support-lead-srilanka",
-  //     shortDescription: "Lead support operations and ensure service quality.",
-  //     type: "Onsite",
-  //     dept: "Support",
-  //     location: "Sri Lanka",
-  //     email: "insk.careers@outlook.com",
-  //     description: `
-  // Customer Support Lead responsible for managing support operations and
-  // ensuring high levels of customer satisfaction.`
-  // }
+Frontend Developer to build responsive and high-performance user
+interfaces for web applications.
+      `
+    }
   ]
-
 };
+
 
 
 // Country tabs data

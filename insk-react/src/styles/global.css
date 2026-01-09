@@ -117,7 +117,7 @@ a {
   color: #fff;
   border-bottom: 0px solid #fd762f;
 }
-
+/* 
 .job-details.section {
   background: radial-gradient(
       800px 400px at 80% 80%,
@@ -125,7 +125,7 @@ a {
       transparent 70%
     ),
     linear-gradient(180deg, #0d0f12 0%, #111318 100%);
-  margin: 80px 120px;
+  margin: 80px 200px;
   border-radius: 20px;
 }
 
@@ -153,6 +153,17 @@ a {
 .job-description p {
   color: #fff;
 }
+
+.job-salary {
+  margin: 12px 0 16px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.job-salary strong {
+  font-weight: 700;
+} */
+
 
 
 /* ============================================
