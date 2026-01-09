@@ -20,10 +20,22 @@ export default function About() {
           </h2>
 
           <p className="about-desc">
-            INSK delivers transformative digital experiences that captivate
-            audiences. Our solutions are not only visually compelling but
-            strategically engineered for growth.
+            INSK Group, founded in 2023, is an international digital
+            solutions and media marketing organization
+            headquartered in Sri Lanka, with a team of over 100
+            professionals dedicated to helping businesses build strong,
+            impactful, and sustainable digital presences. 
           </p>
+
+          {/* <p className="about-desc">
+            We collaborate
+            with brands across diverse industries to transform ideas into
+            meaningful digital experiences through creativity, advanced
+            technology, and strategic thinking, while delivering
+            measurable results with a strong focus on clarity, quality,
+            and long-term value—empowering our clients to grow,
+            adapt, and succeed in an ever-evolving digital landscape.
+          </p> */}
 
           {/* FEATURE LIST */}
           <div className="about-features">
