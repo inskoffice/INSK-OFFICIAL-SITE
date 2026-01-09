@@ -9,6 +9,8 @@ import Testimonials from "../components/Testimonials/Testimonials";
 import Map from "../components/Map/Map";
 import Stats from '../components/Stats/Stats';
 import SEO from "../components/SEO/SEO";
+import StandOut from '../components/StandOut/StandOut';
+
 
 
 const Home = () => {
@@ -27,7 +29,7 @@ const Home = () => {
     <Process />
     <Team />
     {/* <Newsletter /> */}
-    
+      <StandOut />
     <Testimonials />
     <Map />
       

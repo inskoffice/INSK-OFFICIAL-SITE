@@ -33,10 +33,10 @@ const StandOut = () => {
             <div className="standout-container">
                 {/* Header */}
                 <div className="standout-header">
-                    <div className="standout-badge">
+                    {/* <div className="standout-badge">
                         <span className="badge-icon">✨</span>
                         <span className="badge-text">Have Questions ?</span>
-                    </div>
+                    </div> */}
                     <h2 className="standout-title">What Makes Us Stand Out</h2>
                 </div>
 
