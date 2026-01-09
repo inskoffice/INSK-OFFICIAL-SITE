@@ -11,7 +11,7 @@ const jobsData = {
       type: "Hybrid",
       dept: "Marketing",
       location: "India",
-      email: "careers@insk.com",
+      email: "insk.careers@outlook.com",
       description: `
 We are seeking an SEO Specialist to improve search rankings and
 optimize website performance.
@@ -28,7 +28,7 @@ Requirements:
       type: "Onsite",
       dept: "Engineering",
       location: "India",
-      email: "careers@insk.com",
+      email: "insk.careers@outlook.com",
       description: `
 Looking for a Frontend Developer to build modern web interfaces.
 
@@ -44,7 +44,7 @@ Requirements:
       type: "Onsite",
       dept: "Engineering",
       location: "India",
-      email: "careers@insk.com",
+      email: "insk.careers@outlook.com",
       description: `
 Backend Developer responsible for server-side logic and APIs.
 
@@ -60,7 +60,7 @@ Requirements:
       type: "Hybrid",
       dept: "Product",
       location: "India",
-      email: "careers@insk.com",
+      email: "insk.careers@outlook.com",
       description: `
 Product Manager to define roadmap and manage cross-functional teams.
       `
@@ -71,7 +71,7 @@ Product Manager to define roadmap and manage cross-functional teams.
       type: "Remote",
       dept: "Design",
       location: "India",
-      email: "careers@insk.com",
+      email: "insk.careers@outlook.com",
       description: `
 Graphic Designer to create engaging brand visuals and assets.
       `
@@ -82,7 +82,7 @@ Graphic Designer to create engaging brand visuals and assets.
       type: "Onsite",
       dept: "Data",
       location: "India",
-      email: "careers@insk.com",
+      email: "insk.careers@outlook.com",
       description: `
 Data Analyst to analyze datasets and generate business insights.
       `
@@ -96,7 +96,7 @@ Data Analyst to analyze datasets and generate business insights.
       type: "Remote",
       dept: "Design",
       location: "Pakistan",
-      email: "careers@insk.com",
+      email: "insk.careers@outlook.com",
       description: `
 UI/UX Designer focused on user-centered digital experiences.
       `
@@ -107,7 +107,7 @@ UI/UX Designer focused on user-centered digital experiences.
       type: "Hybrid",
       dept: "Marketing",
       location: "Pakistan",
-      email: "careers@insk.com",
+      email: "insk.careers@outlook.com",
       description: `
 Content Writer to craft blogs, website copy, and marketing content.
       `
@@ -118,7 +118,7 @@ Content Writer to craft blogs, website copy, and marketing content.
       type: "Onsite",
       dept: "Engineering",
       location: "Pakistan",
-      email: "careers@insk.com",
+      email: "insk.careers@outlook.com",
       description: `
 Full Stack Developer working across frontend and backend systems.
       `
@@ -129,7 +129,7 @@ Full Stack Developer working across frontend and backend systems.
       type: "Onsite",
       dept: "Human Resources",
       location: "Pakistan",
-      email: "careers@insk.com",
+      email: "insk.careers@outlook.com",
       description: `
 HR Manager overseeing recruitment and people operations.
       `
@@ -144,7 +144,7 @@ HR Manager overseeing recruitment and people operations.
       type: "Onsite",
       dept: "Marketing",
       location: "Sri Lanka",
-      email: "careers@insk.com",
+      email: "insk.careers@outlook.com",
       description: `
   We are seeking a Digital Marketing Executive to plan, execute, and
   optimize digital marketing campaigns across multiple platforms.`
@@ -156,7 +156,7 @@ HR Manager overseeing recruitment and people operations.
       type: "Remote",
       dept: "Marketing",
       location: "Sri Lanka",
-      email: "careers@insk.com",
+      email: "insk.careers@outlook.com",
       description: `
   We are looking for a Social Media Manager to strengthen brand presence `
   },
@@ -167,7 +167,7 @@ HR Manager overseeing recruitment and people operations.
       type: "Hybrid",
       dept: "Marketing",
       location: "Sri Lanka",
-      email: "careers@insk.com",
+      email: "insk.careers@outlook.com",
       description: `
   SEO Specialist responsible for improving search visibility and
   driving organic traffic.`
@@ -179,23 +179,23 @@ HR Manager overseeing recruitment and people operations.
       type: "Hybrid",
       dept: "Engineering",
       location: "Sri Lanka",
-      email: "careers@insk.com",
+      email: "insk.careers@outlook.com",
       description: `
   Frontend Developer to build responsive and high-performance user
   interfaces for web applications.`
   },
-    {
-      title: "Customer Support Lead",
-      slug: "customer-support-lead-srilanka",
-      shortDescription: "Lead support operations and ensure service quality.",
-      type: "Onsite",
-      dept: "Support",
-      location: "Sri Lanka",
-      email: "careers@insk.com",
-      description: `
-  Customer Support Lead responsible for managing support operations and
-  ensuring high levels of customer satisfaction.`
-  }
+  //   {
+  //     title: "Customer Support Lead",
+  //     slug: "customer-support-lead-srilanka",
+  //     shortDescription: "Lead support operations and ensure service quality.",
+  //     type: "Onsite",
+  //     dept: "Support",
+  //     location: "Sri Lanka",
+  //     email: "insk.careers@outlook.com",
+  //     description: `
+  // Customer Support Lead responsible for managing support operations and
+  // ensuring high levels of customer satisfaction.`
+  // }
   ]
 
 };

@@ -4,10 +4,11 @@ export default function Map() {
   return (
     <section className="map-section">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m17..."
-        width="100%"
-        height="400"
+        src="https://www.google.com/maps/d/embed?mid=15qnNBhmzjoiSJOeyhd9iSxu56T_hQio&ehbc=2E312F"
         loading="lazy"
+        allowFullScreen
+        referrerPolicy="no-referrer-when-downgrade"
+        title="INSK Global Presence Map"
       />
     </section>
   );
