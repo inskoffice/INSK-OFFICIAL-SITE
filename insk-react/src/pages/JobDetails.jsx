@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom";
+import { useEffect } from "react";
 import {jobsData} from "../data/jobsData";
 import '../styles/global.css';
 import SEO from "../components/SEO/SEO";
@@ -12,13 +13,21 @@ export default function JobDetails() {
 
   const job = allJobs.find(j => j.slug === jobSlug);
 
+  // Scroll to top on component mount or when jobSlug changes
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }, [jobSlug]);
+
   if (!job) {
     return (
       <section className="job-details section">
         <div className="container">
           <h2>Job not found</h2>
           <p className="muted">
-            The job you’re looking for does not exist or has been closed.
+            The job you're looking for does not exist or has been closed.
           </p>
         </div>
       </section>

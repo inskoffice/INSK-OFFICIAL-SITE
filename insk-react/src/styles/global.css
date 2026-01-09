@@ -10,7 +10,6 @@ body {
   margin: 0;
   font-family: Poppins, system-ui, sans-serif;
   background: #f6f8fc;
-  /* slightly cooler, cleaner */
   color: var(--text);
 }
 
@@ -57,6 +56,7 @@ a {
   margin-top: 5px;
   margin-bottom: 5px;
   font-size: 14px;
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
@@ -75,6 +75,7 @@ a {
   margin-top: 5px;
   margin-bottom: 5px;
   font-size: 14px;
+  transition: all 0.3s ease;
 }
 
 .btn1:hover {
@@ -99,7 +100,6 @@ a {
 }
 
 .footer__contact-item {
-
   padding: 10px 0px;
 }
 
@@ -118,13 +118,323 @@ a {
   border-bottom: 0px solid #fd762f;
 }
 
+.job-details.section {
+  background: radial-gradient(
+      800px 400px at 80% 80%,
+      rgba(255, 61, 129, 0.12),
+      transparent 70%
+    ),
+    linear-gradient(180deg, #0d0f12 0%, #111318 100%);
+  margin: 80px 120px;
+  border-radius: 20px;
+}
+
+.job-details h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.job-details .job-meta {
+  color: var(--muted);
+  margin-bottom: 5px;
+  color: #fff;
+  background: #ff70385f;
+  padding: 10px;
+  border-radius: 18px;
+  max-width: fit-content;
+}
+
+.job-description {
+  white-space: pre-wrap;
+  margin-bottom: 32px;
+}
+
+.job-description p {
+  color: #fff;
+}
+
+
+/* ============================================
+   SCROLL & TRANSITION ANIMATIONS
+   ============================================ */
+
+/* Animation Variables */
+:root {
+  --anim-duration: 0.8s;
+  --anim-easing: cubic-bezier(0.16, 1, 0.3, 1);
+  --anim-delay-base: 0.1s;
+  --parallax-speed: 0.5;
+}
+
+/* Base Animation States */
+.animate-on-scroll {
+  opacity: 0;
+  transition: opacity var(--anim-duration) var(--anim-easing),
+              transform var(--anim-duration) var(--anim-easing);
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+}
+
+/* Fade Animations */
+.fade-up {
+  transform: translateY(40px);
+}
+
+.fade-up.is-visible {
+  transform: translateY(0);
+}
+
+.fade-down {
+  transform: translateY(-40px);
+}
+
+.fade-down.is-visible {
+  transform: translateY(0);
+}
+
+.fade-left {
+  transform: translateX(-40px);
+}
+
+.fade-left.is-visible {
+  transform: translateX(0);
+}
+
+.fade-right {
+  transform: translateX(40px);
+}
+
+.fade-right.is-visible {
+  transform: translateX(0);
+}
+
+/* Scale Animations */
+.scale-up {
+  transform: scale(0.9);
+}
+
+.scale-up.is-visible {
+  transform: scale(1);
+}
+
+.zoom-in {
+  transform: scale(0.8);
+}
+
+.zoom-in.is-visible {
+  transform: scale(1);
+}
+
+/* Slide Animations */
+.slide-in-left {
+  transform: translateX(-100px);
+  opacity: 0;
+}
+
+.slide-in-left.is-visible {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.slide-in-right {
+  transform: translateX(100px);
+  opacity: 0;
+}
+
+.slide-in-right.is-visible {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Rotate Animations */
+.rotate-in {
+  transform: rotate(-5deg) scale(0.9);
+  opacity: 0;
+}
+
+.rotate-in.is-visible {
+  transform: rotate(0) scale(1);
+  opacity: 1;
+}
+
+/* Blur Animations */
+.blur-in {
+  filter: blur(10px);
+  opacity: 0;
+}
+
+.blur-in.is-visible {
+  filter: blur(0);
+  opacity: 1;
+}
+
+/* Stagger Delays */
+.stagger-1 { transition-delay: calc(var(--anim-delay-base) * 1); }
+.stagger-2 { transition-delay: calc(var(--anim-delay-base) * 2); }
+.stagger-3 { transition-delay: calc(var(--anim-delay-base) * 3); }
+.stagger-4 { transition-delay: calc(var(--anim-delay-base) * 4); }
+.stagger-5 { transition-delay: calc(var(--anim-delay-base) * 5); }
+.stagger-6 { transition-delay: calc(var(--anim-delay-base) * 6); }
+
+/* Parallax Container */
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.parallax-bg {
+  position: absolute;
+  top: -20%;
+  left: 0;
+  width: 100%;
+  height: 140%;
+  background-size: cover;
+  background-position: center;
+  will-change: transform;
+  transition: transform 0.1s linear;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+.float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.float-delayed {
+  animation: float 6s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* Gradient Shift */
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.gradient-animated {
+  background-size: 200% 200%;
+  animation: gradient-shift 8s ease infinite;
+}
+
+/* Section Headers with Underline Animation */
+.section-header-animated {
+  position: relative;
+  display: inline-block;
+}
+
+.section-header-animated::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background: var(--brand-gradient);
+  border-radius: 2px;
+  transition: width 0.8s var(--anim-easing);
+}
+
+.section-header-animated.is-visible::after {
+  width: 60px;
+}
+
+/* Card Hover Effects */
+.card-hover {
+  transition: transform 0.3s var(--anim-easing),
+              box-shadow 0.3s var(--anim-easing);
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Image Reveal */
+.img-reveal {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-reveal::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--brand-gradient);
+  transform: translateX(-100%);
+  transition: transform 0.8s var(--anim-easing);
+  z-index: 1;
+}
+
+.img-reveal.is-visible::before {
+  transform: translateX(100%);
+}
+
+.img-reveal img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-10px); }
+  60% { transform: translateY(-5px); }
+}
+
+.scroll-indicator {
+  animation: bounce 2s infinite;
+}
+
+/* Counter Animation */
+.counter {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Reduce Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .parallax-bg,
+  .parallax-layer {
+    transform: none !important;
+  }
+}
+
 
 /* Mobile */
 @media (max-width: 576px) {}
 
 /* Tablet */
 @media (max-width: 768px) {
-
   .mobile-cta .btn {
     display: none;
   }
@@ -164,48 +474,27 @@ a {
   .process__header {
     margin-bottom: 30px;
   }
+
+  .job-details.section {
+    margin: 20px 20px;
+  }
+
+  /* Mobile Animation Adjustments */
+  .animate-on-scroll {
+    --anim-duration: 0.5s;
+  }
+  
+  .fade-up,
+  .fade-down,
+  .fade-left,
+  .fade-right {
+    transform: translateY(20px);
+  }
+  
+  .parallax-bg {
+    transform: none !important;
+  }
 }
 
 /* Tablet Landscape / Small Laptop */
 @media (max-width: 1024px) {}
-
-/* Desktop */
-@media (min-width: 1025px) {}
-
-.job-details.section {
-  background: radial-gradient(
-      800px 400px at 80% 80%,
-      rgba(255, 61, 129, 0.12),
-      transparent 70%
-    ),
-    linear-gradient(180deg, #0d0f12 0%, #111318 100%);
-    margin: 80px 120px;
-  border-radius: 20px;
-}
-
-.job-details h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-  color: #fff;
-}
-
-.job-details .job-meta {
-  color: var(--muted);
-  margin-bottom: 5px;
-  color: #fff;
-  background: #ff70385f;
-  padding: 10px;
-  border-radius: 18px;
-  max-width: fit-content;
-}
-
-.job-description {
-  white-space: pre-wrap;
-  /* background: #f5890559; */
-  margin-bottom: 32px;
-}
-
-.job-description p {
-  color: #fff;
-
-}

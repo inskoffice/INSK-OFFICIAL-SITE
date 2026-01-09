@@ -212,7 +212,7 @@ export default function CareersList() {
   const [activeCountry, setActiveCountry] = useState("india");
 
   return (
-    <section className="careers-section">
+    <section id="careerssection" className="careers-section">
       <div className="container">
 
         {/* Country Tabs */}

@@ -1,9 +1,18 @@
+import { useEffect } from "react";
 import CareersHero from "../components/Careers/CareersHero";
 import CareersList from "../components/Careers/CareersList";
 import SEO from "../components/SEO/SEO";
 
 
 export default function Careers() {
+  // Scroll to top on component mount
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }, []);
+
   return (
     <>
     <SEO

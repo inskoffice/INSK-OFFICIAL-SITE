@@ -338,3 +338,321 @@
     color: #151515;
     border: 2px solid rgb(0 0 0 / 30%);
 }
+
+/* ============================================
+   STANDOUT SECTION - Animation Enhancements
+   Add this to your StandOut.css
+   ============================================ */
+
+/* Decorative circle float animation */
+.decorative-circle {
+  transition: transform 0.3s ease;
+}
+
+.decorative-circle.float {
+  animation: float 8s ease-in-out infinite;
+}
+
+/* Image card hover effect */
+.image-card {
+  transition: transform 0.4s var(--anim-easing),
+              box-shadow 0.4s var(--anim-easing);
+}
+
+.image-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.15);
+}
+
+/* Standout image zoom on hover */
+.standout-image {
+  transition: transform 0.6s var(--anim-easing);
+}
+
+.image-card:hover .standout-image {
+  transform: scale(1.08);
+}
+
+/* Floating badge animation */
+.floating-badge {
+  animation: badge-float 3s ease-in-out infinite;
+}
+
+@keyframes badge-float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.floating-badge:hover {
+  animation-play-state: paused;
+  transform: translateY(-5px) scale(1.05);
+}
+
+/* Badge icon rotation on hover */
+.badge-icon-box {
+  transition: transform 0.3s ease;
+}
+
+.floating-badge:hover .badge-icon-box {
+  transform: rotate(15deg) scale(1.1);
+}
+
+.badge-icon-box svg {
+  transition: stroke 0.3s ease;
+}
+
+.floating-badge:hover .badge-icon-box svg {
+  stroke: var(--brand);
+}
+
+/* Feature card animations */
+.feature-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s var(--anim-easing),
+              box-shadow 0.3s var(--anim-easing),
+              border-color 0.3s ease;
+}
+
+.feature-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(243, 152, 6, 0.1),
+    transparent
+  );
+  transition: left 0.6s ease;
+}
+
+.feature-card:hover::before {
+  left: 100%;
+}
+
+.feature-card:hover {
+  transform: translateX(8px);
+  border-color: var(--brand);
+}
+
+/* Feature icon animations */
+.feature-icon {
+  transition: transform 0.4s var(--anim-easing),
+              color 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+  transform: scale(1.15) rotate(5deg);
+  /* color: var(--brand); */
+}
+
+.feature-icon svg {
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover .feature-icon svg {
+  stroke: var(--brand);
+  filter: drop-shadow(0 4px 8px rgba(243, 152, 6, 0.3));
+}
+
+/* Feature title gradient on hover */
+.feature-title {
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.feature-card:hover .feature-title {
+  background: var(--brand-gradient);
+  -webkit-background-clip: text;
+ 
+  background-clip: text;
+  transform: translateX(4px);
+}
+
+/* Feature description fade */
+.feature-description {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.feature-card:hover .feature-description {
+  color: var(--text);
+  transform: translateX(4px);
+}
+
+/* FeatureBOX animation */
+.featureBOX {
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover .featureBOX {
+  transform: translateX(4px);
+}
+
+/* Standout title animation */
+.standout-title {
+  position: relative;
+  display: inline-block;
+}
+
+.standout-title::before {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background: var(--brand-gradient);
+  border-radius: 2px;
+  transition: width 0.8s var(--anim-easing);
+}
+
+.standout-title.is-visible::before {
+  width: 80px;
+}
+
+/* Staggered feature cards entrance */
+.feature-card:nth-child(1) {
+  transition-delay: 0ms;
+}
+
+.feature-card:nth-child(2) {
+  transition-delay: 150ms;
+}
+
+/* Pulse animation for feature icons on load */
+@keyframes icon-pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.feature-card.is-visible .feature-icon {
+  animation: icon-pulse 0.6s ease;
+}
+
+/* Badge content slide in */
+.badge-content {
+  transition: transform 0.3s ease;
+}
+
+.floating-badge:hover .badge-content {
+  transform: translateX(4px);
+}
+
+.badge-subtitle,
+.badge-title {
+  transition: color 0.3s ease;
+}
+
+.floating-badge:hover .badge-subtitle {
+  color: var(--brand);
+}
+
+.floating-badge:hover .badge-title {
+  background: var(--brand-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Grid stagger animation */
+.standout-grid {
+  position: relative;
+}
+
+/* Image wrapper parallax effect */
+.standout-image-wrapper {
+  transition: transform 0.3s ease;
+}
+
+/* Decorative elements */
+.decorative-circle::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 120%;
+  border-radius: 50%;
+  background: var(--brand-gradient);
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.standout-image-wrapper:hover .decorative-circle::after {
+  opacity: 0.1;
+}
+
+/* Feature number animation (if you add numbers) */
+.feature-card::after {
+  content: attr(data-number);
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 48px;
+  font-weight: 700;
+  color: rgba(243, 152, 6, 0.05);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.feature-card:hover::after {
+  color: rgba(243, 152, 6, 0.15);
+  transform: scale(1.1);
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .floating-badge {
+    animation: badge-float-mobile 3s ease-in-out infinite;
+  }
+
+  @keyframes badge-float-mobile {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-6px);
+    }
+  }
+
+  .feature-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .standout-image-wrapper.fade-right {
+    transform: translateY(30px);
+  }
+
+  .standout-image-wrapper.fade-right.is-visible {
+    transform: translateY(0);
+  }
+
+  .image-card:hover {
+    transform: translateY(-4px) scale(1.01);
+  }
+}
+
+/* Accessibility - Reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  .decorative-circle,
+  .floating-badge,
+  .badge-float {
+    animation: none !important;
+  }
+
+  .feature-card::before {
+    display: none;
+  }
+}

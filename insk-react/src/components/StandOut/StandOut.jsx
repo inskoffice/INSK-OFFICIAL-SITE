@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './StandOut.css';
 
 const StandOut = () => {
+    const [isVisible, setIsVisible] = useState(false);
+    const sectionRef = useRef(null);
+
     const features = [
         {
             id: '01',
@@ -28,30 +31,49 @@ const StandOut = () => {
         }
     ];
 
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting && !isVisible) {
+                    setIsVisible(true);
+                }
+            },
+            { threshold: 0.2 }
+        );
+
+        if (sectionRef.current) {
+            observer.observe(sectionRef.current);
+        }
+
+        return () => {
+            if (sectionRef.current) {
+                observer.unobserve(sectionRef.current);
+            }
+        };
+    }, [isVisible]);
+
     return (
-        <section className="standout-section">
+        <section className="standout-section" ref={sectionRef}>
             <div className="standout-container">
                 {/* Header */}
                 <div className="standout-header">
-                    {/* <div className="standout-badge">
-                        <span className="badge-icon">✨</span>
-                        <span className="badge-text">Have Questions ?</span>
-                    </div> */}
-                    <h2 className="standout-title">What Makes Us Stand Out</h2>
+                    <h2 className="standout-title animate-on-scroll fade-up section-header-animated">
+                        What Makes Us Stand Out
+                    </h2>
                 </div>
 
                 {/* Content Grid */}
                 <div className="standout-grid">
                     {/* Left Side - Image */}
-                    <div className="standout-image-wrapper">
-                        <div className="decorative-circle"></div>
-                        <div className="image-card">
+                    <div className="standout-image-wrapper animate-on-scroll fade-right">
+                        <div className="decorative-circle float"></div>
+                        <div className="image-card img-reveal">
                             <img
                                 src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=700&fit=crop"
                                 alt="Marketing Team"
                                 className="standout-image"
                             />
-                            <div className="floating-badge">
+                            <div className="floating-badge animate-on-scroll scale-up" style={{ transitionDelay: '300ms' }}>
                                 <div className="badge-icon-box">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                                         <path d="M19 10L14 5L9 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -69,18 +91,18 @@ const StandOut = () => {
 
                     {/* Right Side - Features */}
                     <div className="standout-features">
-                        {features.map((feature) => (
-                            <div key={feature.id} className="feature-card">
-
+                        {features.map((feature, index) => (
+                            <div 
+                                key={feature.id} 
+                                className="feature-card animate-on-scroll slide-in-left card-hover"
+                                style={{ transitionDelay: `${index * 150}ms` }}
+                            >
                                 <div className="featureBOX">
                                     <div className="feature-icon">{feature.icon}</div>
                                     <h3 className="feature-title">{feature.title}</h3>
                                 </div>
 
-
-
                                 <p className="feature-description">{feature.description}</p>
-
                             </div>
                         ))}
                     </div>

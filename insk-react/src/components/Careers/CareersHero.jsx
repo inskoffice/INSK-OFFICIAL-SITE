@@ -21,7 +21,7 @@ export default function CareersHero() {
           
         <div>
           <br />
-          <a href="#jobs" className="cta-button">
+          <a href="#careerssection" className="cta-button">
             View Open Positions
           </a>
         </div>
