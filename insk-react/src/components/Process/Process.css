@@ -1,10 +1,11 @@
 .process {
     background: radial-gradient(800px 400px at 80% 80%, rgba(255, 61, 129, 0.12), transparent 70%), linear-gradient(180deg, var(--bg) 0%, #111318 100%);
-    padding: 100px 20px;
+    padding: 40px 20px;
     position: relative;
+    padding-bottom: 50px;
     overflow: hidden;
     margin: 0px 20px;
-  border-radius: 20px;
+    border-radius: 20px;
 }
 
 .process::before {
@@ -148,7 +149,7 @@
 }
 
 .process__step.active .process__step-card {
-   background: var(--brand-gradient);
+    background: var(--brand-gradient);
     border-color: var(--brand);
     transform: translateY(-10px);
     box-shadow: 0 20px 50px var(--ring);
@@ -167,7 +168,7 @@
 }
 
 .process__step-description {
-    font-size:14px;
+    font-size: 14px;
     line-height: 1.6;
     color: rgba(255, 255, 255, 0.7);
     margin: 0;
@@ -220,15 +221,14 @@
 }
 
 .process__step-icon svg {
-  width: 42px;
-  height: 42px;
-  color: #ff6a2b;
-  transition: transform 0.3s ease, color 0.3s ease;
+    width: 42px;
+    height: 42px;
+    color: #ff6a2b;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .process__step-icon:hover svg,
 .process__step-icon.active svg {
-  transform: scale(1.1);
-  color: #ffffff;
+    transform: scale(1.1);
+    color: #ffffff;
 }
-

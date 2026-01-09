@@ -43,6 +43,11 @@ nav {
   gap: 10px;
 }
 
+/* MOBILE WHATSAPP BUTTON (hidden on desktop) */
+.mobile-whatsapp-btn {
+  display: none;
+}
+
 /* MOBILE BUTTON */
 .menu-btn {
   display: none;
@@ -68,8 +73,21 @@ nav {
 /* MOBILE STYLES */
 /* ========================= */
 @media (max-width: 960px) {
+  .mobile-whatsapp-btn.btn1 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 40px;
+    margin-left: 30px;
+  }
+
   .menu-btn {
     display: inline-flex;
+  }
+
+  .mobile-whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
   }
 
   .nav-cta {
@@ -106,9 +124,8 @@ nav {
     margin-top: 10px;
   }
 
-  .mobile-cta .btn,
-  .mobile-cta .btn1 {
-    width: 50%;
+  .mobile-cta .btn {
+    width: 100%;
     justify-content: center;
     text-align: center;
   }

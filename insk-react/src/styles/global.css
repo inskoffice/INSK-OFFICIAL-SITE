@@ -97,23 +97,25 @@ a {
   width: 80%;
   margin: 0 auto;
 }
+
 .footer__contact-item {
-   
-    padding: 10px 0px;
+
+  padding: 10px 0px;
 }
+
 .footer__contact-item:first-child {
   padding-bottom: 10px 0px;
-  padding-top:  0px;
+  padding-top: 0px;
 }
 
-.country-tabs .tab-btn:hover{
-      color: #ff6f38;
-    border-bottom: 2px solid #fd762f;
+.country-tabs .tab-btn:hover {
+  color: #ff6f38;
+  border-bottom: 2px solid #fd762f;
 }
 
-.country-tabs .tab-btn.active:hover{
-      color: #fff;
-    border-bottom: 0px solid #fd762f;
+.country-tabs .tab-btn.active:hover {
+  color: #fff;
+  border-bottom: 0px solid #fd762f;
 }
 
 
@@ -122,7 +124,11 @@ a {
 
 /* Tablet */
 @media (max-width: 768px) {
-  
+
+  .mobile-cta .btn {
+    display: none;
+  }
+
   .process__step-icon {
     display: none;
   }
@@ -154,13 +160,17 @@ a {
   .careers-section {
     padding: 60px 0px;
   }
+
+  .process__header {
+    margin-bottom: 30px;
+  }
 }
 
 /* Tablet Landscape / Small Laptop */
 @media (max-width: 1024px) {}
 
 /* Desktop */
-@media (min-width: 1025px) { }
+@media (min-width: 1025px) {}
 
 
 .job-details h1 {
@@ -184,6 +194,6 @@ a {
 }
 
 .job-description p {
-    color: var(--text);
+  color: var(--text);
 
 }

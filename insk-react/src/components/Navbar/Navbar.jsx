@@ -12,6 +12,11 @@ export default function Navbar() {
           <img src="/images/insk-1.png" alt="INSK Logo" />
         </a>
 
+        {/* MOBILE WHATSAPP BUTTON (outside dropdown) */}
+        <a className="mobile-whatsapp-btn btn1" href="https://wa.me/94760685652">
+          <i className="ri-whatsapp-line" style={{ color: '#25D366' }}></i> Let's Talk
+        </a>
+
         {/* MOBILE MENU BUTTON */}
         <button
           className="menu-btn"
@@ -31,11 +36,8 @@ export default function Navbar() {
           <a href="#contact" onClick={() => setOpen(false)}>Contact</a>
           <a href="/careers" onClick={() => setOpen(false)}>Careers</a>
 
-          {/* MOBILE CTA */}
+          {/* MOBILE CTA (only "All Our Services" button now) */}
           <div className="mobile-cta">
-            <a className="btn1" href="https://wa.me/94760685652">
-              <i className="ri-whatsapp-line" style={{ color: '#25D366' }}></i> Let's Talk
-            </a>
             <a className="btn" href="#services">
               All Our Services
             </a>
