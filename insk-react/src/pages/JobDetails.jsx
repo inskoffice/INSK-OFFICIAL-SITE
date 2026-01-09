@@ -55,8 +55,8 @@ export default function JobDetails() {
                 className={`job-list-item ${j.slug === jobSlug ? "active" : ""}`}
               >
                 <h5>{j.title}</h5>
-                <p>🌏</p>
                 <span>💰 {job.salary}</span>
+                <p>🌏 {job.location}</p>
               </Link>
             ))}
           </aside>
